@@ -1,0 +1,12 @@
+n = eval(input("Digite um número inteiro: "))
+lista_binario = list()
+def conversor_binario_decimal(n):
+    while n >= 2:
+        binario = n%2
+        n = n//2
+        lista_binario.insert(0, binario)
+    lista_binario.insert(0,n)
+
+
+conversor_binario_decimal(n)
+print("O Número decimal", n, "em binário é igual: ", lista_binario)
